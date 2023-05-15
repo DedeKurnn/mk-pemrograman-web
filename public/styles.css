@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 250px;
+    top: 0px;
+    left: 0px;
+    width: 260px;
+    height: 100%;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#navbar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li:hover {
+    background-color: #e0e0e0;
+}
+
+#navbar header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 280px;
+    margin-right: 2rem;
+}
+
+header {
+    font-size: 2.441rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.main-section:first-of-type {
+    margin-top: 0px;
+}
+.main-section {
+    margin-top: 1rem;
+}
+
+p, li {
+    line-height: 1.75;
+}
+
+h2, h3 {
+    margin: 1.5rem 0 0.75rem 0;
+    font-weight: 500;
+}
+
+.main-section ul {
+    padding-left: 1.2rem;
+}
+
+code {
+    font-family: 'JetBrains Mono';
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #eeeeee;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+    #navbar {
+        height: 100%;
+        overflow: hidden;
+    }
+}
